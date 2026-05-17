@@ -22,7 +22,7 @@ jobs:
 
       - run: make test       
 
-      - run: make_docker_build
+      - run: make docker_build
 
 workflows: 
 
