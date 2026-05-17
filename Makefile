@@ -1,14 +1,14 @@
 .PHONY: deps lint test run
 
 deps:
-a	pip install -r requirements.txt; \
-v	pip install -r test_requirements.txt
+	pip install -r requirements.txt; \
+	pip install -r test_requirements.txt
 
 lint:
-d	flake8 hello_world test
-d
+	flake8 hello_world test
+
 test:
-d	PYTHONPATH=. py.test --verbose -s
+	PYTHONPATH=. py.test --verbose -s
 
 run:
-a	python main.py
+	python main.py
