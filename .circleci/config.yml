@@ -22,6 +22,8 @@ jobs:
 
       - run: make test       
 
+      - run :make_docker_build
+
 workflows: 
 
   basic:  
